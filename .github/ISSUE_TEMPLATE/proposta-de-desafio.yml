@@ -1,0 +1,39 @@
+name: 🧩 Proposta de desafio
+description: Sugira um desafio novo para uma das pastas
+title: "[Desafio] "
+labels: ["desafio"]
+body:
+  - type: dropdown
+    id: pasta
+    attributes:
+      label: Pasta
+      options:
+        - disciplinas/logica
+        - linguagens/c
+        - outra (explique abaixo)
+    validations:
+      required: true
+  - type: dropdown
+    id: nivel
+    attributes:
+      label: Nível
+      options:
+        - ⭐ iniciante
+        - ⭐⭐ intermediário
+        - ⭐⭐⭐ desafiador
+    validations:
+      required: true
+  - type: textarea
+    id: ideia
+    attributes:
+      label: Ideia do desafio
+      description: O que o programa recebe e o que deve mostrar? Que assunto ele pratica?
+    validations:
+      required: true
+  - type: checkboxes
+    id: combinados
+    attributes:
+      label: Combinados
+      options:
+        - label: Não é um exercício avaliado (que vale nota) da faculdade
+          required: true

@@ -1,0 +1,34 @@
+name: Testar soluções
+
+on:
+  pull_request:
+    paths:
+      - "**/solucoes/**"
+      - "**/testes/**"
+      - "scripts/testar.py"
+
+jobs:
+  testar:
+    name: Rodar os testes dos desafios
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Testar as soluções do PR
+        env:
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          mapfile -t arquivos < <(git diff --name-only --diff-filter=AM "$BASE_SHA" HEAD -- '*/solucoes/*' | grep -v '/\.gitkeep$' || true)
+          if [ ${#arquivos[@]} -eq 0 ]; then
+            echo "Nenhuma solução nova neste PR: conferindo todas as soluções com os testes atuais."
+            python scripts/testar.py --todas
+          else
+            python scripts/testar.py "${arquivos[@]}"
+          fi

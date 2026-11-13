@@ -1,0 +1,13 @@
+# Programas compilados
+*.exe
+*.out
+*.o
+a.out
+
+# Python
+__pycache__/
+
+# Sistema e editores
+.DS_Store
+Thumbs.db
+.vscode/

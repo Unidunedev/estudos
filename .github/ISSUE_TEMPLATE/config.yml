@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 Tirar uma dúvida
+    url: https://github.com/Unidunedev/estudos/discussions
+    about: Dúvidas sobre conteúdo ou desafios ficam melhor nas Discussions

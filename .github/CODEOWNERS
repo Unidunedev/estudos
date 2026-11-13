@@ -1,0 +1,6 @@
+# Quem é chamado automaticamente para revisar os PRs de cada pasta.
+# Ao assumir uma pasta, coloque seu @username na linha dela.
+*                     @clehdev
+/fundamentos/         @clehdev
+/linguagens/c/        @clehdev
+/disciplinas/logica/  @clehdev
