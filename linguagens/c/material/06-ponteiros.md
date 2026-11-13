@@ -113,4 +113,4 @@ Linguagens como Python, Java e JavaScript usam endereços por baixo dos panos, m
 
 ---
 
-[⬅️ Funções](05-funcoes.md) · [Linguagem C](../README.md)
+[⬅️ Funções](05-funcoes.md) · [Próximo: Structs ➡️](07-structs.md)

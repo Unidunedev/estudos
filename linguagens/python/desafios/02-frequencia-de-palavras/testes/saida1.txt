@@ -1,0 +1,4 @@
+cafe: 2
+codigo: 1
+e: 2
+o: 3

@@ -1,6 +1,6 @@
 # 06 · Fatorial
 
-> Nível: ⭐⭐ · Assuntos: funções, repetição · Criado por: @clehdev · Linguagens: C ou Python
+> Nível: ⭐⭐ · Assuntos: funções, repetição · Criado por: @clehdev · Linguagens: C, Python ou Java
 
 ## Enunciado
 

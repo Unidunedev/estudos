@@ -1,0 +1,4 @@
+Deposito de 50 realizado
+Saque de 30 realizado
+Saldo insuficiente
+Ana: saldo final 120

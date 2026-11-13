@@ -4,7 +4,7 @@
 
 ## O que é
 
-C é uma linguagem **compilada**, criada nos anos 1970, que está por trás de sistemas operacionais (Linux, partes do Windows e do macOS), bancos de dados, jogos e dispositivos como micro-ondas e carros. Ela é muito usada no início da faculdade porque mostra **como o computador funciona de verdade**: memória, tipos e o caminho do código até o executável.
+C é uma linguagem **compilada**, criada nos anos 1970, que está por trás de sistemas operacionais (Linux, partes do Windows e do macOS), bancos de dados, jogos e dispositivos como micro-ondas e carros. Ela é muito usada no início da faculdade porque mostra **como o computador funciona de verdade**: memória, tipos e o caminho do código até o executável. Leia o **[sobre o C](sobre.md)**: história, onde se usa, a "família do C" e o que os cursos raramente contam.
 
 ## Antes de começar
 
@@ -24,8 +24,9 @@ Os conceitos gerais (condicionais, repetições, vetores, funções) estão expl
 | 5 | Vetores e strings | [04 · Vetores e strings](material/04-vetores-e-strings.md) | [04 · Contar vogais](desafios/04-contar-vogais/) |
 | 6 | Funções | [05 · Funções em C](material/05-funcoes.md) | [Lógica 06 · Fatorial](../../disciplinas/logica/desafios/06-fatorial/) |
 | 7 | Ponteiros | [06 · Ponteiros](material/06-ponteiros.md) | ⏳ quer criar um? |
+| 8 | Structs (o "avô" das classes) | [07 · Structs](material/07-structs.md) | ⏳ quer criar um? |
 
-> ⏳ = esperando alguém da galera criar! Faltam também materiais sobre **structs**, **arquivos** e **alocação dinâmica** (`malloc`). Veja como no [CONTRIBUTING.md](../../CONTRIBUTING.md).
+> ⏳ = esperando alguém da galera criar! Faltam também materiais sobre **arquivos** e **alocação dinâmica** (`malloc`). Veja como no [CONTRIBUTING.md](../../CONTRIBUTING.md).
 
 ## Como compilar e rodar
 

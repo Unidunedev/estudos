@@ -6,14 +6,15 @@
 
 Lógica de programação é a habilidade de **quebrar um problema em passos** que um computador consegue seguir. É a parte que **não muda** de uma linguagem para outra: quem tem boa lógica aprende qualquer sintaxe.
 
-Os desafios desta pasta podem ser resolvidos em **C** (`.c`) ou **Python** (`.py`).
+Os desafios desta pasta podem ser resolvidos em **C** (`.c`), **Python** (`.py`) ou **Java** (`.java`).
 
 ## Antes de começar
 
 - [ ] Ler os [fundamentos](../../fundamentos/)
 - [ ] Ter uma linguagem instalada:
   - **C:** veja a [instalação do C](../../linguagens/c/README.md#antes-de-começar)
-  - **Python:** baixe em **https://www.python.org/downloads** (no Windows, marque **Add python.exe to PATH** na primeira tela do instalador) e confira com `python --version`
+  - **Python:** veja a [instalação do Python](../../linguagens/python/README.md#antes-de-começar)
+  - **Java:** veja a [instalação do Java](../../linguagens/java/README.md#antes-de-começar)
 
 ## Roteiro
 
@@ -40,6 +41,9 @@ gcc minha-solucao.c -o programa
 
 # Python
 python minha-solucao.py
+
+# Java
+java minha-solucao.java
 ```
 
 > 💡 Para testar com a entrada de um teste sem digitar: `python minha-solucao.py < testes/entrada1.txt`. O `<` manda o conteúdo do arquivo como se fosse o teclado.

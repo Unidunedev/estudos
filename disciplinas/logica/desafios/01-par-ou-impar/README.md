@@ -1,6 +1,6 @@
 # 01 · Par ou ímpar
 
-> Nível: ⭐ · Assuntos: operador `%`, condicionais · Criado por: @clehdev · Linguagens: C ou Python
+> Nível: ⭐ · Assuntos: operador `%`, condicionais · Criado por: @clehdev · Linguagens: C, Python ou Java
 
 ## Enunciado
 

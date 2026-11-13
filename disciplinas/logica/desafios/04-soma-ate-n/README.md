@@ -1,6 +1,6 @@
 # 04 · Soma de 1 até N
 
-> Nível: ⭐ · Assuntos: repetição, acumulador · Criado por: @clehdev · Linguagens: C ou Python
+> Nível: ⭐ · Assuntos: repetição, acumulador · Criado por: @clehdev · Linguagens: C, Python ou Java
 
 ## Enunciado
 

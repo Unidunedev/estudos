@@ -20,6 +20,11 @@ jobs:
         with:
           python-version: "3.12"
 
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+
       - name: Testar as soluções do PR
         env:
           PR_AUTHOR: ${{ github.event.pull_request.user.login }}

@@ -85,4 +85,4 @@ Você reconhece alguma delas?
 
 ---
 
-[⬅️ Sintaxe e semântica](04-sintaxe-e-semantica.md) · [Fundamentos 🧱](README.md) · [Começar por Lógica ➡️](../disciplinas/logica/) · [Começar por C ➡️](../linguagens/c/)
+[⬅️ Sintaxe e semântica](04-sintaxe-e-semantica.md) · [Fundamentos 🧱](README.md) · [Começar por Lógica ➡️](../disciplinas/logica/) · [Começar por C ➡️](../linguagens/c/) · [Python ➡️](../linguagens/python/) · [Java ➡️](../linguagens/java/)

@@ -31,8 +31,12 @@ estudos/
 | Pasta | O que tem | Linguagens aceitas nos desafios |
 |---|---|---|
 | [`fundamentos/`](fundamentos/) | Como a programação funciona por baixo dos panos | — |
-| [`disciplinas/logica/`](disciplinas/logica/) | Algoritmos, variáveis, condições, repetições, vetores e funções | C ou Python |
-| [`linguagens/c/`](linguagens/c/) | Instalação, compilação, memória e ponteiros | C |
+| [`disciplinas/logica/`](disciplinas/logica/) | Algoritmos, variáveis, condições, repetições, vetores e funções | C, Python ou Java |
+| [`linguagens/c/`](linguagens/c/) | Compilação, memória, ponteiros e structs | C |
+| [`linguagens/python/`](linguagens/python/) | Do básico às classes, herança e ambientes virtuais | Python |
+| [`linguagens/java/`](linguagens/java/) | JVM, tipos, classes, herança, interfaces e coleções | Java |
+
+Cada linguagem tem um **`sobre.md`**: história, como ela roda, onde é usada no mercado, frameworks, trilhas de carreira e o que os cursos raramente contam.
 
 > 💡 **Linguagem ou disciplina?** "Quero aprender C" → `linguagens/`. "Tenho prova de lógica (ou de banco de dados)" → `disciplinas/`. Os desafios de uma linguagem aceitam só ela; os de disciplina aceitam qualquer linguagem suportada.
 

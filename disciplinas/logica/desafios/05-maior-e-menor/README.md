@@ -1,6 +1,6 @@
 # 05 · Maior e menor
 
-> Nível: ⭐⭐ · Assuntos: vetores, repetição · Criado por: @clehdev · Linguagens: C ou Python
+> Nível: ⭐⭐ · Assuntos: vetores, repetição · Criado por: @clehdev · Linguagens: C, Python ou Java
 
 ## Enunciado
 

@@ -1,6 +1,6 @@
 # 02 · O maior de três
 
-> Nível: ⭐ · Assuntos: condicionais, operadores lógicos · Criado por: @clehdev · Linguagens: C ou Python
+> Nível: ⭐ · Assuntos: condicionais, operadores lógicos · Criado por: @clehdev · Linguagens: C, Python ou Java
 
 ## Enunciado
 

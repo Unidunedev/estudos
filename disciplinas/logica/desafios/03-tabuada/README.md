@@ -1,6 +1,6 @@
 # 03 · Tabuada
 
-> Nível: ⭐ · Assuntos: repetição (for) · Criado por: @clehdev · Linguagens: C ou Python
+> Nível: ⭐ · Assuntos: repetição (for) · Criado por: @clehdev · Linguagens: C, Python ou Java
 
 ## Enunciado
 

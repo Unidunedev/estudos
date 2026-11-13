@@ -31,9 +31,10 @@ TEMPO_LIMITE = 5  # segundos por teste
 LINGUAGENS_POR_PASTA = {
     "linguagens/c": {".c"},
     "linguagens/python": {".py"},
-    "disciplinas": {".c", ".py"},
+    "linguagens/java": {".java"},
+    "disciplinas": {".c", ".py", ".java"},
 }
-SUPORTADAS = {".c", ".py"}
+SUPORTADAS = {".c", ".py", ".java"}
 IGNORAR = {".gitkeep", "README.md"}
 
 try:
@@ -54,6 +55,15 @@ def preparar(arquivo: Path, pasta_tmp: Path) -> tuple[list[str] | None, str]:
     relativo = arquivo.resolve().relative_to(RAIZ).as_posix()
     if arquivo.suffix == ".py":
         return [sys.executable, str(arquivo)], ""
+
+    if arquivo.suffix == ".java":
+        java = shutil.which("java")
+        if not java:
+            return None, "não encontrei o java. Veja linguagens/java/instalacao/ para instalar o JDK."
+        # Modo "arquivo único" (Java 11+): compila em memória e executa a primeira classe do arquivo.
+        # Roda como um computador brasileiro (pt-BR), para a pegadinha da vírgula aparecer
+        # igual no seu computador e no GitHub. Veja linguagens/java/material/02-tipos-e-variaveis.md
+        return [java, "-Duser.language=pt", "-Duser.country=BR", relativo], ""
 
     compilador = shutil.which("gcc") or shutil.which("clang")
     if not compilador:
@@ -131,6 +141,7 @@ def testar(arquivo: Path, autor: str | None) -> bool:
                     encoding="utf-8",
                     errors="replace",
                     timeout=TEMPO_LIMITE,
+                    cwd=RAIZ,
                 )
             except subprocess.TimeoutExpired:
                 print(f"   ❌ teste {numero}: demorou mais de {TEMPO_LIMITE}s. Será um laço infinito?")
@@ -139,9 +150,19 @@ def testar(arquivo: Path, autor: str | None) -> bool:
             esperado = normalizar(saida_esperada.read_text(encoding="utf-8"))
             recebido = normalizar(execucao.stdout)
             if execucao.returncode != 0 and execucao.returncode is not None:
+                erros = [
+                    linha for linha in execucao.stderr.strip().splitlines()
+                    if not linha.startswith("Picked up JAVA_TOOL_OPTIONS")
+                ]
+                if "error: compilation failed" in execucao.stderr:
+                    print("   📋 erro de compilação:")
+                    for linha in erros[:15]:
+                        print(f"      {linha}")
+                    print("   ❌ não compilou. Corrija os erros acima (veja a linha indicada).")
+                    return False
                 print(f"   ❌ teste {numero}: o programa encerrou com erro (código {execucao.returncode}).")
-                if execucao.stderr.strip():
-                    print("      " + execucao.stderr.strip().splitlines()[-1])
+                for linha in erros[-6:]:
+                    print(f"      {linha}")
                 continue
             if recebido == esperado:
                 passou += 1
@@ -151,6 +172,8 @@ def testar(arquivo: Path, autor: str | None) -> bool:
                 print("      entrada:  " + (" | ".join(normalizar(texto_entrada)) or "(nenhuma)"))
                 print("      esperado: " + " | ".join(esperado))
                 print("      recebido: " + (" | ".join(recebido) or "(nada)"))
+                if [linha.replace(",", ".") for linha in recebido] == esperado:
+                    print("      💡 Parece a pegadinha da vírgula! Use Locale.setDefault(Locale.US) no começo do main.")
 
         total = len(entradas)
         print(f"   {'🎉' if passou == total else '📊'} {passou}/{total} testes passaram")

@@ -1,0 +1,3 @@
+abelha: 1
+macaco: 1
+zebra: 1

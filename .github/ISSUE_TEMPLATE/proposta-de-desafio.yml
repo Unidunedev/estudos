@@ -10,6 +10,8 @@ body:
       options:
         - disciplinas/logica
         - linguagens/c
+        - linguagens/python
+        - linguagens/java
         - outra (explique abaixo)
     validations:
       required: true
