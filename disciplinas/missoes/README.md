@@ -17,6 +17,12 @@ Cada missão pode ser resolvida **em C, Python ou Java**, respeitando seu nível
 
 Os testes verificam o **contrato mínimo** de entrada e saída em cada README. Você pode deixar seu projeto mais elaborado, mas não mostre mensagens como `Digite um número:` em stdout, porque a correção compara o texto exatamente. Funcionalidades extras e qualidade da modelagem podem ser revisadas por pessoas.
 
+## Temporada de estreia
+
+No site da comunidade, o Desafio 2 apresenta **cinco histórias por vez**, numa experiência de escolha inspirada no onboarding. As primeiras são: **Salve o gatinho, Salve a cafeteria, Apague o incêndio, Lance a nave e Proteja o castelo**.
+
+As outras missões permanecem aqui como material preparado para futuras temporadas. A novidade do gatinho fica numa branch separada até a revisão e o anúncio oficial.
+
 ## O cardápio
 
 - **01 · [Apague o incêndio](desafios/01-incendio/)** — Os bombeiros precisam prever o consumo de água antes de iniciar o resgate.
@@ -31,9 +37,10 @@ Os testes verificam o **contrato mínimo** de entrada e saída em cada README. V
 - **10 · [Cuide do jardim da Lua](desafios/10-jardim/)** — As flores lunares precisam receber a quantidade certa de água.
 - **11 · [A feira das estrelas](desafios/11-feira/)** — Um comerciante espacial precisa conferir descontos e trocos.
 - **12 · [Encontre o pinguim](desafios/12-pinguim/)** — Pipo precisa de três respostas corretas para encontrar o caminho de casa.
+- **13 · [Salve o gatinho](desafios/13-gatinho/)** — Ajude a equipe de resgate a verificar se uma escada alcança o galho onde Mingau está.
 
 ## Conquistas futuras
 
 Estamos planejando um álbum de selos associado aos PRs **realmente aprovados e integrados**, não a um botão clicado no site. Por enquanto, enviar uma solução ainda não cria selos automaticamente. O PR e o arquivo publicado em `solucoes/` são o registro verificável de participação.
 
-**A nova coleção está numa branch em desenvolvimento e só será aberta após o anúncio da comunidade.**
+**Os exercícios do Desafio 2 serão liberados conforme o anúncio da comunidade. A missão 13 permanece nesta branch até a revisão.**
