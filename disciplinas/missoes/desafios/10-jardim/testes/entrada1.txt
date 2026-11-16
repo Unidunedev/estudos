@@ -1,0 +1,4 @@
+3
+Rosa 1.5
+Lirio 2
+Cacto 0.25

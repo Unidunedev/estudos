@@ -1,0 +1,5 @@
+3
+Centro 0
+Norte 0
+Sul 1
+Norte
