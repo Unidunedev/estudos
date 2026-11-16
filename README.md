@@ -17,6 +17,7 @@
 1. **[Fundamentos](fundamentos/)**: o que acontece quando um programa roda, linguagens compiladas e interpretadas, sintaxe e semântica. Leia antes de qualquer linguagem.
 2. **[Lógica de programação](disciplinas/logica/)**: a base de tudo. Se está começando, comece por aqui.
 3. **Escolha uma linguagem ou disciplina** e siga o roteiro do `README.md` dela.
+   **Quer um projeto com história?** Veja as [Missões da Comunidade — Desafio 2](disciplinas/missoes/).
 4. **Resolva os desafios** e mande sua solução por PR.
 
 O repositório tem três tipos de pasta:
@@ -32,6 +33,7 @@ estudos/
 |---|---|---|
 | [`fundamentos/`](fundamentos/) | Como a programação funciona por baixo dos panos | — |
 | [`disciplinas/logica/`](disciplinas/logica/) | Algoritmos, variáveis, condições, repetições, vetores e funções | C, Python ou Java |
+| [`disciplinas/missoes/`](disciplinas/missoes/) | Desafio 2: doze histórias para construir pequenos projetos e aprender com outros alunos | C, Python ou Java |
 | [`linguagens/c/`](linguagens/c/) | Compilação, memória, ponteiros e structs | C |
 | [`linguagens/python/`](linguagens/python/) | Do básico às classes, herança e ambientes virtuais | Python |
 | [`linguagens/java/`](linguagens/java/) | JVM, tipos, classes, herança, interfaces e coleções | Java |
