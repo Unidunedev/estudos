@@ -1,0 +1,37 @@
+name: Validar Missões Desafio 2 — temporário
+
+on:
+  push:
+    branches:
+      - feat/desafio-2-missoes
+
+jobs:
+  conferir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Conferir as 12 missões e os 36 pares de testes
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          base = Path("disciplinas/missoes/desafios")
+          pastas = sorted(p for p in base.iterdir() if p.is_dir())
+          assert len(pastas) == 12, len(pastas)
+          for pasta in pastas:
+              assert (pasta / "README.md").exists(), pasta
+              assert (pasta / "solucoes" / ".gitkeep").exists(), pasta
+              for i in range(1, 4):
+                  entrada = pasta / "testes" / f"entrada{i}.txt"
+                  saida = pasta / "testes" / f"saida{i}.txt"
+                  assert entrada.is_file() and saida.is_file(), (pasta, i)
+                  assert entrada.read_text().strip(), entrada
+                  assert saida.read_text().strip(), saida
+                  assert entrada.read_bytes().endswith(b"\n"), entrada
+                  assert saida.read_bytes().endswith(b"\n"), saida
+          print(f"{len(pastas)} missoes, {len(pastas)*3} casos de entrada/saida.")
+          PY
+      - name: Executar testes existentes sem mudar a estrutura
+        run: python scripts/testar.py --todas
